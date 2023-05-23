@@ -1,0 +1,71 @@
+#home-footer {
+    background-color: $footerColor;
+
+    .footer-container {
+       max-width: 1220px;
+        margin: auto;
+        padding: 0 60px; 
+        
+        .customer {
+            padding: 70px 0 50px;
+            border-bottom:1px solid rgb(228, 228, 228);
+            .customer-ul {
+                .title {
+                    color: $thirdColor;
+                    font-size: 12px;
+                    line-height: 2em;
+                    font-weight: 500;
+                    letter-spacing: .1em;
+                    font-family: 'Montserrat', sans-serif;
+
+                }
+
+                .list {
+                    font-size: 12px;
+                    color: $seconderyTextColor;
+                    line-height: 24px;
+                    list-style: none;
+
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+
+        .end-info{
+            .reserved{
+                font-size: 12px;
+                color: $seconderyTextColor;
+                line-height: 24px;
+                padding: 25px 0;
+                text-align: center;
+
+                span{
+                    @extend .reserved; 
+                    color: $primaryTextColor;
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+            .pay-card{
+                padding: 25px 0;
+                text-align: center;
+            }
+            .social{
+                padding: 25px 0;
+                text-align: center;
+
+                a{
+                    color: $seconderyTextColor;
+                    padding: 0 0 0 25px;
+                    font-size: 10px;
+                    letter-spacing: .2em;
+                    line-height: 24px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
